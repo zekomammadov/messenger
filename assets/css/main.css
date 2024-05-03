@@ -1,0 +1,273 @@
+.container > div{
+    height: 100vh;
+}
+.sidebar {
+    padding: 40px;
+    height: 100%;
+    width: 300px;
+    
+    & div {
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 65px;
+    
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .links {
+            
+            .link {
+                color: var(--black);
+                cursor: pointer;
+    
+                &:not(:last-child) {
+                    margin-bottom: 33px;
+                }
+                .icon {
+                    width: 37px;
+                    height: 37px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-right: 12px;
+                }
+            }
+            .link.active {
+                color: var(--blue);
+            }
+            .link:nth-child(1) .icon {
+                background-image: url(../icons/messages.svg);
+            }
+            .link:nth-child(2) .icon {
+                background-image: url(../icons/people.svg);
+            }
+            .link:nth-child(3) .icon {
+                background-image: url(../icons/shop.svg);
+            }
+            .link:nth-child(4) .icon {
+                background-image: url(../icons/document.svg);
+            }
+            .link:nth-child(5) .icon {
+                background-image: url(../icons/archive.svg);
+            }
+        }
+    }
+    .logout {
+
+        .profile {
+            width: 70px;
+            height: 70px;
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .bg {
+            width: 66px;
+            height: 66px;
+            background-color: var(--light-gray);
+            border-radius: 50%;
+            
+            
+            .icon {
+                background-image: url(../icons/logout.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+.chats {
+    height: 100%;
+    background-color: var(--light-gray);
+    padding: 40px 50px;
+    width: 400px;
+
+    .chats-header {
+        margin-bottom: 32px;
+
+        & div {
+            
+            .icon {
+                width: 37px;
+                height: 37px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+            .icon:first-child {
+                background-image: url(../icons/video.svg);
+                margin-right: 30px;
+            }
+            .icon:last-child {
+                background-image: url(../icons/addsquare.svg);
+            }
+        }
+    }
+    .chats-main {
+        
+        .search {
+            width: 100%;
+            height: 53px;
+            border-radius: 50px;
+            background-color: var(--gray);
+            padding: 14px 20px;
+            margin-bottom: 50px;
+
+            .icon {
+                width: 25px;
+                height: 25px;
+                background-image: url(../icons/messagesearch.svg);
+                margin-right: 15px;
+            }
+            & input {
+                flex-grow: 1;
+            }
+        }
+        .messages {
+
+            .message.active {
+                background-color: var(--blue);
+
+                .msg-text {
+
+                    & p:first-child {
+                        color: var(--white);
+                    }
+                }
+            }
+            .message {
+                width: 100%;
+                border-radius: 99px;
+                margin-bottom: 28px;
+
+                .msg-img {
+                    width: 75px;
+                    height: 75px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    margin-right: 15px;
+
+                    & img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .msg-text {
+
+                    & p:first-child {
+                        margin-bottom: 10px;
+                    }
+                    & p:last-child {
+                        color: var(--dark-gray);
+                    }
+                }
+            }
+        }
+    }
+}
+.message-box {
+    flex-grow: 1;
+    padding: 40px 30px;
+
+    .message-header {
+
+        & div {
+            .icon {
+                width: 27px;
+                height: 27px;
+                background-size: contain;
+            }
+            .icon:not(:last-child) {
+                margin-right: 35px;
+            }
+            .icon:nth-child(1) {
+                background-image: url(../icons/call.svg);
+            }
+            .icon:nth-child(2) {
+                background-image: url(../icons/video.svg);
+            }
+            .icon:nth-child(3) {
+                background-image: url(../icons/infocircle.svg);
+            }
+        }
+        .profile-img {
+            width: 70px;
+            height: 70px;
+            margin-right: 30px;
+    
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .message-body {
+        margin-bottom: 70px;
+        .text {
+
+            & p {
+                color: var(--white);
+                padding: 11px 17px;
+                background-color: var(--blue);
+                border-radius: 30px;
+                margin: 13px 15px;
+                max-width: 350px;
+
+                &:nth-child(even) {
+                    background-color: var(--dark-gray);
+                }
+            }
+            &:nth-child(odd) {
+                justify-content: end;
+            }
+        }
+    }
+    .message-footer {
+        & div {
+
+            .icon:not(:last-child) {
+                margin-right: 20px;
+            }
+            .icon {
+                width: 46px;
+                height: 46px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+            }
+            .icon:nth-child(1) {
+                background-image: url(../icons/menu.svg);
+            }
+            .icon:nth-child(2) {
+                background-image: url(../icons/camera.svg);
+            }
+            .icon:nth-child(3) {
+                background-image: url(../icons/gallery.svg);
+            }
+            .icon:nth-child(4) {
+                background-image: url(../icons/voicecricle.svg);
+            }
+            & input {
+                padding: 14px 20px;
+                background-color: var(--gray);
+                border-radius: 50px;
+                margin-right: 20px;
+            }
+            
+            .icon:nth-child(6) {
+                background-image: url(../icons/smileys.svg);
+            }
+        }
+    }
+}

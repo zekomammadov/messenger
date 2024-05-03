@@ -1,0 +1,38 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.items-center {
+    align-items: center;
+}
+.flex-col {
+    flex-direction: column;
+}
+.text-center {
+    text-align: center;
+}
+.f-32 {
+    font-size: 32px;
+}
+.f-11 {
+    font-size: 11px;
+}
+
+.f-700 {
+    font-weight: 700;
+}
